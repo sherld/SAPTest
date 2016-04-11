@@ -96,7 +96,7 @@ public class CalTask3 extends RecursiveTask<Map<String, Integer>>{
 //        }
         
         // 进行词频统计
-        map = Arrays.stream(words).collect(Collectors.groupingBy(Function.identity(), Collectors.summingInt(e -> 1)));
+        map = Arrays.stream(words).parallel().collect(Collectors.groupingBy(Function.identity(), Collectors.summingInt(e -> 1)));
         return map;
     }
 }

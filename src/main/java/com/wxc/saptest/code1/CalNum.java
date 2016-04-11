@@ -17,7 +17,7 @@ import java.util.concurrent.ForkJoinTask;
 public class CalNum {
     public static void main(String[] args) throws Exception {
         System.out.println("code1 start");
-        String fileName = "testL.txt";
+        String fileName = "content.txt";
         if(args.length > 0)
             fileName = args[0];
         System.out.println("文件名为:" + fileName);

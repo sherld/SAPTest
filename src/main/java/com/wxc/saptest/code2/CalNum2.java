@@ -50,7 +50,7 @@ public class CalNum2 {
     
     public static void main(String[] args) throws Exception {
         System.out.println("code2 start");
-        String fileName = "testL.txt";
+        String fileName = "content.txt";
         if(args.length > 0)
             fileName = args[0];
         System.out.println("文件名为:" + fileName);
